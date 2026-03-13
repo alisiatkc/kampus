@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Открытый кампус | Герценовский университет</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- ШАПКА УНИВЕРСИТЕТА -->
+    <div class="university-header">
+        <div class="container">
+            <div>РГПУ им. А. И. Герцена</div>
+            <div class="university-links">
+                <a href="#">Сведения об ОО</a>
+                <a href="#">Личный кабинет</a>
+                <a href="en/index.html">English</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- НАВИГАЦИЯ -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg class="icon logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M4 4h16v16H4z"/>
+                    <path d="M12 8v8M8 12h8"/>
+                </svg>
+                ОТКРЫТЫЙ КАМПУС <span>• ГЕРЦЕНА</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="about.html">О кампусе</a></li>
+                <li><a href="events.html">События</a></li>
+                <li><a href="spaces.html">Пространства</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+            <div class="lang-switch">
+                <a href="#" class="active">RU</a>
+                <a href="en/index.html">EN</a>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO СЕКЦИЯ -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-image">
+                    <div class="hero-text">
+                        <h1>Открытый кампус<br>Герценовского университета</h1>
+                        <p>Культурно-образовательное пространство в центре Петербурга. Лекции, мастер-классы, выставки в исторических интерьерах</p>
+                        <div class="hero-buttons">
+                            <a href="events.html" class="btn btn-primary">Афиша событий</a>
+                            <a href="about.html" class="btn btn-outline">О проекте</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- БЛИЖАЙШИЕ СОБЫТИЯ -->
+        <section class="container">
+            <div class="section-header">
+                <h2>Ближайшие события</h2>
+                <a href="events.html" class="section-link">Все события →</a>
+            </div>
+
+            <div class="events-grid">
+                <a href="event-single.html?id=1" class="event-card" onclick="openModal(event, 'Нейросети в искусстве')">
+                    <span class="event-badge">Мастер-класс</span>
+                    <div class="event-date">18 марта, 18:00</div>
+                    <div class="event-title">Нейросети в искусстве</div>
+                    <div style="color: var(--color-text-light); margin-bottom: 0.5rem;">Дмитрий Соколов</div>
+                    <div class="event-price">500 ₽</div>
+                </a>
+                <a href="event-single.html?id=2" class="event-card" onclick="openModal(event, 'Современная лингвистика')">
+                    <span class="event-badge">Лекция</span>
+                    <div class="event-date">21 марта, 19:00</div>
+                    <div class="event-title">Современная лингвистика</div>
+                    <div style="color: var(--color-text-light); margin-bottom: 0.5rem;">Анна Волкова</div>
+                    <div class="event-price free">Бесплатно</div>
+                </a>
+                <a href="event-single.html?id=3" class="event-card" onclick="openModal(event, 'Молодые художники')">
+                    <span class="event-badge">Выставка</span>
+                    <div class="event-date">25 марта, 16:00</div>
+                    <div class="event-title">Молодые художники Петербурга</div>
+                    <div style="color: var(--color-text-light); margin-bottom: 0.5rem;">Открытие вернисажа</div>
+                    <div class="event-price free">Вход свободный</div>
+                </a>
+                <a href="event-single.html?id=4" class="event-card" onclick="openModal(event, 'Экология города')">
+                    <span class="event-badge">Круглый стол</span>
+                    <div class="event-date">28 марта, 17:00</div>
+                    <div class="event-title">Экология города</div>
+                    <div style="color: var(--color-text-light); margin-bottom: 0.5rem;">Экспертная дискуссия</div>
+                    <div class="event-price free">По регистрации</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ИЗОМЕТРИЧЕСКАЯ КАРТА -->
+        <section class="map-section">
+            <div class="container">
+                <h2>Пространства кампуса</h2>
+                <p style="color: var(--color-text-light); margin-bottom: 2rem;">Кликайте на здания, чтобы узнать больше</p>
+                
+                <div class="isometric-map">
+                    <svg class="map-svg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+                        <!-- Основа (земля) -->
+                        <polygon points="100,250 400,100 700,250 400,400" fill="#d9d0c0" stroke="#b2947a" stroke-width="2"/>
+                        
+                        <!-- Открытая гостиная -->
+                        <a href="space-single.html?id=open-living">
+                            <polygon points="250,180 350,130 420,190 320,240" fill="#c4b5a0" stroke="#8b7a66" stroke-width="2" class="map-building" data-space="open-living"/>
+                            <text x="280" y="180" fill="#1a1a1a" font-size="12">Гостиная</text>
+                        </a>
+                        
+                        <!-- Мастерская нижняя -->
+                        <a href="space-single.html?id=workshop-down">
+                            <polygon points="400,150 480,110 550,170 470,210" fill="#b8a78e" stroke="#8b7a66" stroke-width="2" class="map-building" data-space="workshop-down"/>
+                            <text x="430" y="150" fill="#1a1a1a" font-size="12">Маст. нижняя</text>
+                        </a>
+                        
+                        <!-- Мастерская верхняя -->
+                        <a href="space-single.html?id=workshop-up">
+                            <polygon points="480,80 560,40 630,100 550,140" fill="#ab987c" stroke="#8b7a66" stroke-width="2" class="map-building" data-space="workshop-up"/>
+                            <text x="510" y="80" fill="#1a1a1a" font-size="12">Маст. верхняя</text>
+                        </a>
+                        
+                        <!-- 6-й корпус -->
+                        <a href="space-single.html?id=building6">
+                            <polygon points="150,280 250,230 350,280 250,330" fill="#9f8b6b" stroke="#8b7a66" stroke-width="2" class="map-building" data-space="building6"/>
+                            <text x="200" y="280" fill="#1a1a1a" font-size="12">6-й корпус</text>
+                        </a>
+                        
+                        <!-- Книжный -->
+                        <a href="space-single.html?id=bookstore">
+                            <polygon points="60,280 130,250 200,280 130,310" fill="#8f7a5a" stroke="#8b7a66" stroke-width="2" class="map-building" data-space="bookstore"/>
+                            <text x="90" y="280" fill="#1a1a1a" font-size="12">Книжный</text>
+                        </a>
+                        
+                        <!-- Сад -->
+                        <a href="space-single.html?id=garden">
+                            <circle cx="550" cy="280" r="15" fill="#7c9f6e" stroke="#5a7a4a" stroke-width="2" class="map-building" data-space="garden"/>
+                            <circle cx="580" cy="250" r="12" fill="#7c9f6e" stroke="#5a7a4a" stroke-width="2"/>
+                            <circle cx="520" cy="300" r="10" fill="#7c9f6e" stroke="#5a7a4a" stroke-width="2"/>
+                            <text x="530" y="270" fill="#1a1a1a" font-size="12">Сад</text>
+                        </a>
+                        
+                        <!-- Сквер -->
+                        <a href="space-single.html?id=square">
+                            <rect x="300" y="300" width="80" height="40" fill="#a8c9a0" stroke="#5a7a4a" stroke-width="2" class="map-building" data-space="square" opacity="0.8"/>
+                            <text x="310" y="330" fill="#1a1a1a" font-size="12">Сквер</text>
+                        </a>
+                    </svg>
+                </div>
+
+                <div class="map-legend">
+                    <div class="map-legend-item"><span class="map-dot"></span> Открытая гостиная</div>
+                    <div class="map-legend-item"><span class="map-dot"></span> Мастерские</div>
+                    <div class="map-legend-item"><span class="map-dot"></span> 6-й корпус</div>
+                    <div class="map-legend-item"><span class="map-dot"></span> Книжный</div>
+                    <div class="map-legend-item"><span class="map-dot"></span> Сад и сквер</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПРОСТРАНСТВА -->
+        <section class="container">
+            <div class="section-header">
+                <h2>Пространства</h2>
+                <a href="spaces.html" class="section-link">Все пространства →</a>
+            </div>
+
+            <div class="spaces-grid">
+                <a href="space-single.html?id=open-living" class="space-card">
+                    <div class="space-icon icon-xl">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg>
+                    </div>
+                    <div class="space-title">Открытая гостиная</div>
+                    <div class="space-address">Казанская ул., 1</div>
+                    <div class="space-link">Лекции, выставки →</div>
+                </a>
+                <a href="space-single.html?id=workshop-down" class="space-card">
+                    <div class="space-icon icon-xl">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 7L9 12L14 17"/>
+                            <path d="M4 12h16"/>
+                            <rect x="2" y="3" width="20" height="18" rx="2" ry="2"/>
+                        </svg>
+                    </div>
+                    <div class="space-title">Мастерская нижняя</div>
+                    <div class="space-address">Кожевенная линия, 30</div>
+                    <div class="space-link">Мастер-классы →</div>
+                </a>
+                <a href="space-single.html?id=workshop-up" class="space-card">
+                    <div class="space-icon icon-xl">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="2" width="20" height="20" rx="2.18"/>
+                            <path d="M7 2v20M17 2v20M2 12h20M2 7h5M2 17h5M17 17h5M17 7h5"/>
+                        </svg>
+                    </div>
+                    <div class="space-title">Мастерская верхняя</div>
+                    <div class="space-address">Кожевенная линия, 30</div>
+                    <div class="space-link">Выставки →</div>
+                </a>
+                <a href="space-single.html?id=building6" class="space-card">
+                    <div class="space-icon icon-xl">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <path d="M9 22V12h6v10"/>
+                        </svg>
+                    </div>
+                    <div class="space-title">6-й корпус</div>
+                    <div class="space-address">наб. Мойки, 48</div>
+                    <div class="space-link">Лекционные залы →</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- НОВОСТИ -->
+        <section class="container">
+            <div class="section-header">
+                <h2>Новости</h2>
+                <a href="news.html" class="section-link">Все новости →</a>
+            </div>
+
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-date">12 февраля 2026</div>
+                    <div class="news-title">Запись лекции "Современное искусство"</div>
+                    <a href="news-single.html?id=1" class="news-link">
+                        Смотреть видео 
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                            <path d="M6 12L10 8L6 4"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">8 февраля 2026</div>
+                    <div class="news-title">Фото с мастер-класса по керамике</div>
+                    <a href="news-single.html?id=2" class="news-link">
+                        Смотреть фото
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                            <path d="M6 12L10 8L6 4"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">1 февраля 2026</div>
+                    <div class="news-title">Как прошла выставка молодых художников</div>
+                    <a href="news-single.html?id=3" class="news-link">
+                        Читать
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                            <path d="M6 12L10 8L6 4"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПОДПИСКА -->
+        <section class="container">
+            <div class="subscribe">
+                <h2>Будьте в курсе событий</h2>
+                <p style="color: var(--color-text-light);">Анонсы лекций, мастер-классов и выставок</p>
+                <form class="subscribe-form" id="subscribeForm">
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ФУТЕР -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Открытый кампус</h4>
+                    <p>РГПУ им. А. И. Герцена<br>наб. реки Мойки, 48<br>Санкт-Петербург</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <a href="about.html">О кампусе</a>
+                    <a href="events.html">События</a>
+                    <a href="spaces.html">Пространства</a>
+                    <a href="news.html">Новости</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Документы</h4>
+                    <a href="#">Правила посещения</a>
+                    <a href="partners.html">Партнерам</a>
+                    <a href="#">Спикерам</a>
+                    <a href="#">Политика</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Социальные сети</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="VK">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 4L19 20C18.9 20.6 18.3 21 17.7 20.9C16.8 20.8 13 19 11 17C9 15 7 11 7 10C7 9.5 7.2 9 7.7 8.8L12 9L16 5C16.7 4.3 17.7 4.2 18.4 4.8L22 4Z"/>
+                                <path d="M13 13L9 17M15 9L11 13"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Telegram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <rect x="2" y="6" width="20" height="12" rx="2"/>
+                                <path d="M10 10L15 12L10 14V10Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p style="margin-top: 1.5rem;">Подпишитесь на новости</p>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2026 Открытый кампус РГПУ им. А. И. Герцена
+            </div>
+        </div>
+    </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО РЕГИСТРАЦИИ -->
+    <div class="modal-overlay" id="registrationModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <h3 id="modalEventTitle">Регистрация на событие</h3>
+            <form class="modal-form" id="registrationForm" onsubmit="submitRegistration(event)">
+                <div class="form-group">
+                    <input type="text" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Телефон (необязательно)">
+                </div>
+                <button type="submit" class="modal-submit">Записаться</button>
+                <div class="success-message" id="successMessage">
+                    ✓ Вы зарегистрированы! Подтверждение отправлено на email.
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
