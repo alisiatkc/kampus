@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пространства | Открытый кампус</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- ШАПКА УНИВЕРСИТЕТА -->
+    <div class="university-header">
+        <div class="container">
+            <div>РГПУ им. А. И. Герцена</div>
+            <div class="university-links">
+                <a href="#">Сведения об ОО</a>
+                <a href="#">Личный кабинет</a>
+                <a href="en/index.html">English</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- НАВИГАЦИЯ -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg class="icon logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M4 4h16v16H4z"/>
+                    <path d="M12 8v8M8 12h8"/>
+                </svg>
+                ОТКРЫТЫЙ КАМПУС <span>• ГЕРЦЕНА</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О кампусе</a></li>
+                <li><a href="events.html">События</a></li>
+                <li><a href="spaces.html" class="active">Пространства</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+            <div class="lang-switch">
+                <a href="#" class="active">RU</a>
+                <a href="en/index.html">EN</a>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- ХЛЕБНЫЕ КРОШКИ -->
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a> / <span>Пространства</span>
+        </div>
+
+        <h1>Пространства кампуса</h1>
+        <p style="color: var(--color-text-light); max-width: 600px; margin-bottom: 3rem;">Исторические здания в центре Петербурга, открытые для образования, творчества и общения</p>
+
+        <!-- СЕТКА ВСЕХ ПРОСТРАНСТВ -->
+        <div class="spaces-grid" style="grid-template-columns: repeat(3, 1fr);">
+            <a href="space-single.html?id=open-living" class="space-card">
+                <div class="space-icon icon-xl">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg>
+                </div>
+                <div class="space-title">Открытая гостиная</div>
+                <div class="space-address">Казанская ул., 1</div>
+                <p style="color: var(--color-text-light); margin: 0.5rem 0 1rem;">Лекции, выставки, мастер-классы до 100 человек</p>
+                <div class="space-link">Подробнее →</div>
+            </a>
+
+            <a href="space-single.html?id=workshop-down" class="space-card">
+                <div class="space-icon icon-xl">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M14 7L9 12L14 17"/>
+                        <path d="M4 12h16"/>
+                        <rect x="2" y="3" width="20" height="18" rx="2" ry="2"/>
+                    </svg>
+                </div>
+                <div class="space-title">Мастерская нижняя</div>
+                <div class="space-address">Кожевенная линия, 30</div>
+                <p style="color: var(--color-text-light); margin: 0.5rem 0 1rem;">Пространство для мастер-классов и практических занятий</p>
+                <div class="space-link">Подробнее →</div>
+            </a>
+
+            <a href="space-single.html?id=workshop-up" class="space-card">
+                <div class="space-icon icon-xl">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <rect x="2" y="2" width="20" height="20" rx="2.18"/>
+                        <path d="M7 2v20M17 2v20M2 12h20M2 7h5M2 17h5M17 17h5M17 7h5"/>
+                    </svg>
+                </div>
+                <div class="space-title">Мастерская верхняя</div>
+                <div class="space-address">Кожевенная линия, 30</div>
+                <p style="color: var(--color-text-light); margin: 0.5rem 0 1rem;">Выставочное пространство и арт-резиденция</p>
+                <div class="space-link">Подробнее →</div>
+            </a>
+
+            <a href="space-single.html?id=building6" class="space-card">
+                <div class="space-icon icon-xl">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <path d="M9 22V12h6v10"/>
+                    </svg>
+                </div>
+                <div class="space-title">6-й корпус</div>
+                <div class="space-address">наб. Мойки, 48</div>
+                <p style="color: var(--color-text-light); margin: 0.5rem 0 1rem;">Лекционные залы, аудитории, коворкинг</p>
+                <div class="space-link">Подробнее →</div>
+            </a>
+
+            <a href="space-single.html?id=bookstore" class="space-card">
+                <div class="space-icon icon-xl">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                    </svg>
+                </div>
+                <div class="space-title">Книжный магазин</div>
+                <div class="space-address">наб. Мойки, 48</div>
+                <p style="color: var(--color-text-light); margin: 0.5rem 0 1rem;">Книги по искусству, сувениры, встречи с авторами</p>
+                <div class="space-link">Подробнее →</div>
+            </a>
+
+            <a href="space-single.html?id=garden" class="space-card">
+                <div class="space-icon icon-xl">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="M12 8v4M12 16h.01"/>
+                    </svg>
+                </div>
+                <div class="space-title">Сад</div>
+                <div class="space-address">внутренний двор</div>
+                <p style="color: var(--color-text-light); margin: 0.5rem 0 1rem;">Зеленое пространство для отдыха</p>
+                <div class="space-link">Подробнее →</div>
+            </a>
+
+            <a href="space-single.html?id=square" class="space-card">
+                <div class="space-icon icon-xl">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <rect x="2" y="2" width="20" height="20" rx="2"/>
+                        <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                </div>
+                <div class="space-title">Сквер</div>
+                <div class="space-address">перед корпусом</div>
+                <p style="color: var(--color-text-light); margin: 0.5rem 0 1rem;">Открытое пространство, скамейки</p>
+                <div class="space-link">Подробнее →</div>
+            </a>
+
+            <a href="space-single.html?id=coworking" class="space-card">
+                <div class="space-icon icon-xl">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <rect x="2" y="7" width="20" height="14" rx="2"/>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                    </svg>
+                </div>
+                <div class="space-title">Коворкинг</div>
+                <div class="space-address">6-й корпус, 2 этаж</div>
+                <p style="color: var(--color-text-light); margin: 0.5rem 0 1rem;">Рабочие места, переговорки, Wi-Fi</p>
+                <div class="space-link">Подробнее →</div>
+            </a>
+        </div>
+
+        <!-- ИНТЕРАКТИВНАЯ КАРТА (дубль с главной) -->
+        <section class="map-section" style="margin-top: 4rem;">
+            <h2>Карта кампуса</h2>
+            <div class="isometric-map">
+                <svg class="map-svg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+                    <polygon points="100,250 400,100 700,250 400,400" fill="#d9d0c0" stroke="#b2947a" stroke-width="2"/>
+                    <a href="space-single.html?id=open-living">
+                        <polygon points="250,180 350,130 420,190 320,240" fill="#c4b5a0" stroke="#8b7a66" stroke-width="2" class="map-building"/>
+                        <text x="280" y="180" fill="#1a1a1a" font-size="12">Гостиная</text>
+                    </a>
+                    <a href="space-single.html?id=workshop-down">
+                        <polygon points="400,150 480,110 550,170 470,210" fill="#b8a78e" stroke="#8b7a66" stroke-width="2" class="map-building"/>
+                        <text x="430" y="150" fill="#1a1a1a" font-size="12">Маст. нижняя</text>
+                    </a>
+                    <a href="space-single.html?id=workshop-up">
+                        <polygon points="480,80 560,40 630,100 550,140" fill="#ab987c" stroke="#8b7a66" stroke-width="2" class="map-building"/>
+                        <text x="510" y="80" fill="#1a1a1a" font-size="12">Маст. верхняя</text>
+                    </a>
+                    <a href="space-single.html?id=building6">
+                        <polygon points="150,280 250,230 350,280 250,330" fill="#9f8b6b" stroke="#8b7a66" stroke-width="2" class="map-building"/>
+                        <text x="200" y="280" fill="#1a1a1a" font-size="12">6-й корпус</text>
+                    </a>
+                    <a href="space-single.html?id=bookstore">
+                        <polygon points="60,280 130,250 200,280 130,310" fill="#8f7a5a" stroke="#8b7a66" stroke-width="2" class="map-building"/>
+                        <text x="90" y="280" fill="#1a1a1a" font-size="12">Книжный</text>
+                    </a>
+                </svg>
+            </div>
+        </section>
+    </main>
+
+    <!-- ФУТЕР -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Открытый кампус</h4>
+                    <p>РГПУ им. А. И. Герцена<br>наб. реки Мойки, 48<br>Санкт-Петербург</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <a href="about.html">О кампусе</a>
+                    <a href="events.html">События</a>
+                    <a href="spaces.html">Пространства</a>
+                    <a href="news.html">Новости</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Документы</h4>
+                    <a href="#">Правила посещения</a>
+                    <a href="partners.html">Партнерам</a>
+                    <a href="#">Спикерам</a>
+                    <a href="#">Политика</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Социальные сети</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="VK">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 4L19 20C18.9 20.6 18.3 21 17.7 20.9C16.8 20.8 13 19 11 17C9 15 7 11 7 10C7 9.5 7.2 9 7.7 8.8L12 9L16 5C16.7 4.3 17.7 4.2 18.4 4.8L22 4Z"/>
+                                <path d="M13 13L9 17M15 9L11 13"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Telegram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <rect x="2" y="6" width="20" height="12" rx="2"/>
+                                <path d="M10 10L15 12L10 14V10Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p style="margin-top: 1.5rem;">Подпишитесь на новости</p>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2026 Открытый кампус РГПУ им. А. И. Герцена
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
