@@ -80,4 +80,194 @@
         <div class="container nav-container">
             <a href="index.html" class="logo">
                 <svg class="icon logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path d="M4 4h16
+                    <path d="M4 4h16v16H4z"/>
+                    <path d="M12 8v8M8 12h8"/>
+                </svg>
+                ОТКРЫТЫЙ КАМПУС <span>• ГЕРЦЕНА</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О кампусе</a></li>
+                <li><a href="events.html" class="active">События</a></li>
+                <li><a href="spaces.html">Пространства</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+            <div class="lang-switch">
+                <a href="#" class="active">RU</a>
+                <a href="en/index.html">EN</a>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- ХЛЕБНЫЕ КРОШКИ -->
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a> / <a href="events.html">События</a> / <span>Нейросети в искусстве</span>
+        </div>
+
+        <!-- ЗАГОЛОВОК -->
+        <h1>Нейросети в искусстве: практикум</h1>
+        
+        <!-- ОСНОВНАЯ ИНФОРМАЦИЯ -->
+        <div class="event-header">
+            <div>
+                <div style="background: var(--color-border); height: 300px; border-radius: var(--radius-lg); margin-bottom: 1rem;"></div>
+                <p style="color: var(--color-text-light);">Создание художественных проектов с помощью искусственного интеллекта. Практическое занятие для начинающих. Участники познакомятся с современными нейросетями и создадут собственные работы.</p>
+            </div>
+            <div class="event-meta-list">
+                <div class="meta-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                    <div>
+                        <div style="font-weight: 500;">18 марта 2026, 18:00</div>
+                        <div style="color: var(--color-text-light);">Продолжительность: 2 часа</div>
+                    </div>
+                </div>
+                <div class="meta-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <div>
+                        <div style="font-weight: 500;">Открытая гостиная</div>
+                        <div style="color: var(--color-text-light);">Казанская ул., 1</div>
+                    </div>
+                </div>
+                <div class="meta-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                    <div>
+                        <div style="font-weight: 500;">Дмитрий Соколов</div>
+                        <div style="color: var(--color-text-light);">Специалист по ИИ, художник</div>
+                    </div>
+                </div>
+                <div class="meta-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <rect x="2" y="6" width="20" height="12" rx="2"/>
+                        <path d="M8 10h8M8 14h4"/>
+                    </svg>
+                    <div>
+                        <div style="font-weight: 500;">500 ₽</div>
+                        <div style="color: var(--color-text-light);">Все материалы включены</div>
+                    </div>
+                </div>
+                <button class="btn btn-accent" style="width: 100%; margin-top: 1rem;" onclick="openModal(event, 'Нейросети в искусстве')">Записаться</button>
+            </div>
+        </div>
+
+        <!-- О СПИКЕРЕ -->
+        <h2>О спикере</h2>
+        <div class="speaker-card">
+            <div class="speaker-photo"></div>
+            <div>
+                <h3>Дмитрий Соколов</h3>
+                <p style="color: var(--color-text-light);">Художник и исследователь в области искусственного интеллекта. Автор курсов по генеративному искусству. Участник выставок в России и Европе. Работы находятся в коллекциях музеев современного искусства.</p>
+            </div>
+        </div>
+
+        <!-- ПРОГРАММА -->
+        <h2>Программа мастер-класса</h2>
+        <ul style="list-style: none; margin: 2rem 0;">
+            <li style="padding: 1rem 0; border-bottom: 1px solid var(--color-border); display: flex; gap: 1rem;">
+                <span style="color: var(--color-accent);">18:00 – 18:30</span>
+                <span>Введение в нейросети для художников</span>
+            </li>
+            <li style="padding: 1rem 0; border-bottom: 1px solid var(--color-border); display: flex; gap: 1rem;">
+                <span style="color: var(--color-accent);">18:30 – 19:30</span>
+                <span>Практическая работа с Midjourney и DALL-E</span>
+            </li>
+            <li style="padding: 1rem 0; border-bottom: 1px solid var(--color-border); display: flex; gap: 1rem;">
+                <span style="color: var(--color-accent);">19:30 – 20:00</span>
+                <span>Обсуждение результатов, вопросы</span>
+            </li>
+        </ul>
+
+        <!-- ПОХОЖИЕ СОБЫТИЯ -->
+        <div class="section-header" style="margin-top: 3rem;">
+            <h2>Другие события</h2>
+            <a href="events.html" class="section-link">Все события →</a>
+        </div>
+
+        <div class="events-grid" style="grid-template-columns: repeat(3, 1fr);">
+            <a href="event-single.html?id=2" class="event-card">
+                <span class="event-badge">Лекция</span>
+                <div class="event-date">21 марта, 19:00</div>
+                <div class="event-title">Современная лингвистика</div>
+                <div style="color: var(--color-text-light);">Анна Волкова</div>
+                <div class="event-price free">Бесплатно</div>
+            </a>
+            <a href="event-single.html?id=3" class="event-card">
+                <span class="event-badge">Выставка</span>
+                <div class="event-date">25 марта, 16:00</div>
+                <div class="event-title">Молодые художники</div>
+                <div style="color: var(--color-text-light);">Открытие вернисажа</div>
+                <div class="event-price free">Вход свободный</div>
+            </a>
+            <a href="event-single.html?id=4" class="event-card">
+                <span class="event-badge">Круглый стол</span>
+                <div class="event-date">28 марта, 17:00</div>
+                <div class="event-title">Экология города</div>
+                <div style="color: var(--color-text-light);">Экспертная дискуссия</div>
+                <div class="event-price free">По регистрации</div>
+            </a>
+        </div>
+    </main>
+
+    <!-- ФУТЕР -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Открытый кампус</h4>
+                    <p>РГПУ им. А. И. Герцена<br>наб. реки Мойки, 48<br>Санкт-Петербург</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <a href="about.html">О кампусе</a>
+                    <a href="events.html">События</a>
+                    <a href="spaces.html">Пространства</a>
+                    <a href="news.html">Новости</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Документы</h4>
+                    <a href="#">Правила посещения</a>
+                    <a href="partners.html">Партнерам</a>
+                    <a href="#">Спикерам</a>
+                    <a href="#">Политика</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Социальные сети</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="VK"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 4L19 20C18.9 20.6 18.3 21 17.7 20.9C16.8 20.8 13 19 11 17C9 15 7 11 7 10C7 9.5 7.2 9 7.7 8.8L12 9L16 5C16.7 4.3 17.7 4.2 18.4 4.8L22 4Z"/><path d="M13 13L9 17M15 9L11 13"/></svg></a>
+                        <a href="#" aria-label="Telegram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"/></svg></a>
+                        <a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M10 10L15 12L10 14V10Z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">© 2026 Открытый кампус РГПУ им. А. И. Герцена</div>
+        </div>
+    </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО РЕГИСТРАЦИИ -->
+    <div class="modal-overlay" id="registrationModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <h3 id="modalEventTitle">Регистрация на событие</h3>
+            <form class="modal-form" id="registrationForm" onsubmit="submitRegistration(event)">
+                <div class="form-group"><input type="text" placeholder="Ваше имя" required></div>
+                <div class="form-group"><input type="email" placeholder="Email" required></div>
+                <div class="form-group"><input type="tel" placeholder="Телефон"></div>
+                <button type="submit" class="modal-submit">Записаться</button>
+                <div class="success-message" id="successMessage">✓ Вы зарегистрированы! Подтверждение отправлено на email.</div>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
