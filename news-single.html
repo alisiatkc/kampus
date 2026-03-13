@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись лекции | Открытый кампус</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .news-content {
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+        .news-image {
+            width: 100%;
+            height: 400px;
+            background: var(--color-border);
+            border-radius: var(--radius-lg);
+            margin: 2rem 0;
+        }
+        .video-placeholder {
+            background: #1a1a1a;
+            color: white;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--radius-lg);
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- ШАПКА УНИВЕРСИТЕТА -->
+    <div class="university-header">
+        <div class="container">
+            <div>РГПУ им. А. И. Герцена</div>
+            <div class="university-links">
+                <a href="#">Сведения об ОО</a>
+                <a href="#">Личный кабинет</a>
+                <a href="en/index.html">English</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- НАВИГАЦИЯ -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg class="icon logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M4 4h16v16H4z"/>
+                    <path d="M12 8v8M8 12h8"/>
+                </svg>
+                ОТКРЫТЫЙ КАМПУС <span>• ГЕРЦЕНА</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О кампусе</a></li>
+                <li><a href="events.html">События</a></li>
+                <li><a href="spaces.html">Пространства</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+            <div class="lang-switch">
+                <a href="#" class="active">RU</a>
+                <a href="en/index.html">EN</a>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- ХЛЕБНЫЕ КРОШКИ -->
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a> / <a href="news.html">Новости</a> / <span>Запись лекции "Современное искусство"</span>
+        </div>
+
+        <div class="news-content">
+            <h1>Запись лекции "Современное искусство"</h1>
+            <div style="color: var(--color-text-light); margin-bottom: 2rem;">12 февраля 2026</div>
+
+            <!-- ВИДЕО -->
+            <div class="video-placeholder">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="white">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polygon points="10 8 16 12 10 16" fill="white"/>
+                </svg>
+            </div>
+
+            <!-- ТЕКСТ -->
+            <p style="margin: 2rem 0; line-height: 1.8;">12 февраля в Открытой гостиной прошла лекция искусствоведа Александра Дединкина "Современное искусство: от поп-арта до NFT". Лектор рассказал о ключевых течениях второй половины XX века и объяснил, как понимать актуальное искусство.</p>
+            
+            <p style="margin: 2rem 0; line-height: 1.8;">В ходе лекции были рассмотрены работы Уорхола, Хокни, Кунса, Харинга, а также современных российских художников. Особое внимание уделили цифровому искусству и тому, как технологии меняют художественный рынок.</p>
+
+            <!-- ГАЛЕРЕЯ -->
+            <h2 style="margin: 3rem 0 1.5rem;">Фото с лекции</h2>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+                <div style="aspect-ratio: 4/3; background: var(--color-border); border-radius: var(--radius-lg);"></div>
+                <div style="aspect-ratio: 4/3; background: var(--color-border); border-radius: var(--radius-lg);"></div>
+                <div style="aspect-ratio: 4/3; background: var(--color-border); border-radius: var(--radius-lg);"></div>
+            </div>
+
+            <!-- ПОХОЖИЕ НОВОСТИ -->
+            <div style="margin-top: 4rem;">
+                <div class="section-header">
+                    <h3>Другие новости</h3>
+                    <a href="news.html" class="section-link">Все новости →</a>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;">
+                    <a href="news-single.html?id=2" style="text-decoration: none; color: inherit;">
+                        <div style="height: 150px; background: var(--color-border); border-radius: var(--radius-lg); margin-bottom: 1rem;"></div>
+                        <div style="color: var(--color-text-light);">8 февраля 2026</div>
+                        <h4>Фото с мастер-класса по керамике</h4>
+                    </a>
+                    <a href="news-single.html?id=3" style="text-decoration: none; color: inherit;">
+                        <div style="height: 150px; background: var(--color-border); border-radius: var(--radius-lg); margin-bottom: 1rem;"></div>
+                        <div style="color: var(--color-text-light);">1 февраля 2026</div>
+                        <h4>Выставка молодых художников</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ФУТЕР -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Открытый кампус</h4>
+                    <p>РГПУ им. А. И. Герцена<br>наб. реки Мойки, 48<br>Санкт-Петербург</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <a href="about.html">О кампусе</a>
+                    <a href="events.html">События</a>
+                    <a href="spaces.html">Пространства</a>
+                    <a href="news.html">Новости</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Документы</h4>
+                    <a href="#">Правила посещения</a>
+                    <a href="partners.html">Партнерам</a>
+                    <a href="#">Спикерам</a>
+                    <a href="#">Политика</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Социальные сети</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="VK"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 4L19 20C18.9 20.6 18.3 21 17.7 20.9C16.8 20.8 13 19 11 17C9 15 7 11 7 10C7 9.5 7.2 9 7.7 8.8L12 9L16 5C16.7 4.3 17.7 4.2 18.4 4.8L22 4Z"/><path d="M13 13L9 17M15 9L11 13"/></svg></a>
+                        <a href="#" aria-label="Telegram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"/></svg></a>
+                        <a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M10 10L15 12L10 14V10Z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">© 2026 Открытый кампус РГПУ им. А. И. Герцена</div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
