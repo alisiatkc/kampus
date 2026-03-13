@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нейросети в искусстве | Открытый кампус</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .event-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin: 2rem 0 3rem;
+        }
+        
+        .event-meta-list {
+            background: var(--color-hover);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        .meta-item:last-child {
+            border-bottom: none;
+        }
+        
+        .speaker-card {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            background: var(--color-hover);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .speaker-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: var(--color-border);
+        }
+        
+        @media (max-width: 768px) {
+            .event-header {
+                grid-template-columns: 1fr;
+            }
+            .speaker-card {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ШАПКА УНИВЕРСИТЕТА -->
+    <div class="university-header">
+        <div class="container">
+            <div>РГПУ им. А. И. Герцена</div>
+            <div class="university-links">
+                <a href="#">Сведения об ОО</a>
+                <a href="#">Личный кабинет</a>
+                <a href="en/index.html">English</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- НАВИГАЦИЯ -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg class="icon logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M4 4h16
