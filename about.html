@@ -1,1 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О кампусе | Открытый кампус</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- ШАПКА УНИВЕРСИТЕТА -->
+    <div class="university-header">
+        <div class="container">
+            <div>РГПУ им. А. И. Герцена</div>
+            <div class="university-links">
+                <a href="#">Сведения об ОО</a>
+                <a href="#">Личный кабинет</a>
+                <a href="en/index.html">English</a>
+            </div>
+        </div>
+    </div>
 
+    <!-- НАВИГАЦИЯ -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg class="icon logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M4 4h16v16H4z"/>
+                    <path d="M12 8v8M8 12h8"/>
+                </svg>
+                ОТКРЫТЫЙ КАМПУС <span>• ГЕРЦЕНА</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html" class="active">О кампусе</a></li>
+                <li><a href="events.html">События</a></li>
+                <li><a href="spaces.html">Пространства</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+            <div class="lang-switch">
+                <a href="#" class="active">RU</a>
+                <a href="en/index.html">EN</a>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- ХЛЕБНЫЕ КРОШКИ -->
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a> / <span>О кампусе</span>
+        </div>
+
+        <h1>О кампусе</h1>
+        
+        <!-- HERO ИЗОБРАЖЕНИЕ -->
+        <div class="about-hero">
+            <div class="about-hero-image"></div>
+        </div>
+        
+        <!-- КОНЦЕПЦИЯ И МИССИЯ -->
+        <div class="about-content">
+            <div>
+                <h2>Концепция</h2>
+                <p style="color: var(--color-text-light);">Открытый кампус РГПУ им. А. И. Герцена — это новое пространство в исторических зданиях университета, где проходят образовательные и научные мероприятия не только для студентов, но и для жителей и гостей города.</p>
+                <p style="color: var(--color-text-light); margin-top: 1rem;">Мы объединяем академические традиции и современные форматы, создавая среду для обмена знаниями и творчества.</p>
+            </div>
+            <div>
+                <h2>Миссия</h2>
+                <p style="color: var(--color-text-light);">Сделать образование и культуру доступными для всех, сохраняя историческое наследие и открывая новые возможности для диалога между университетом и городом.</p>
+            </div>
+        </div>
+        
+        <!-- ИСТОРИЧЕСКИЙ БЛОК -->
+        <div class="history-block">
+            <h2>Историческое наследие</h2>
+            <p style="color: var(--color-text-light);">Здания нашего кампуса — памятники архитектуры XVIII–XIX веков. Здесь учились и работали выдающиеся деятели русской культуры. Сегодня мы бережно сохраняем исторические интерьеры (лепнину, барельефы, парадные лестницы) и наполняем их новой жизнью.</p>
+        </div>
+        
+        <!-- КОМАНДА -->
+        <h2 style="margin-top: 3rem;">Команда</h2>
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-photo"></div>
+                <h3>Анна Смирнова</h3>
+                <p style="color: var(--color-text-light);">Руководитель кампуса</p>
+            </div>
+            <div class="team-card">
+                <div class="team-photo"></div>
+                <h3>Петр Иванов</h3>
+                <p style="color: var(--color-text-light);">Куратор событий</p>
+            </div>
+            <div class="team-card">
+                <div class="team-photo"></div>
+                <h3>Елена Волкова</h3>
+                <p style="color: var(--color-text-light);">Координатор программ</p>
+            </div>
+        </div>
+        
+        <!-- НАПРАВЛЕНИЯ -->
+        <div style="background: var(--color-hover); padding: 3rem; border-radius: var(--radius-xl); margin: 3rem 0;">
+            <h2 class="text-center">Центры и направления</h2>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem;">
+                <div class="text-center">
+                    <svg class="icon-xl" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin: 0 auto 1rem;">
+                        <path d="M4 4h16v16H4z"/>
+                        <circle cx="9.5" cy="9.5" r="2.5"/>
+                        <path d="M21 15l-5-4-3 3-4-4-5 5"/>
+                    </svg>
+                    <strong>Искусство</strong><br>
+                    <span style="color: var(--color-text-light);">выставки, лекции, мастер-классы</span>
+                </div>
+                <div class="text-center">
+                    <svg class="icon-xl" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin: 0 auto 1rem;">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 2v20M2 12h20"/>
+                    </svg>
+                    <strong>Наука</strong><br>
+                    <span style="color: var(--color-text-light);">открытые семинары, дискуссии</span>
+                </div>
+                <div class="text-center">
+                    <svg class="icon-xl" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin: 0 auto 1rem;">
+                        <rect x="2" y="3" width="20" height="14" rx="2"/>
+                        <path d="M8 21h8M12 17v4"/>
+                    </svg>
+                    <strong>Технологии</strong><br>
+                    <span style="color: var(--color-text-light);">ИИ, инновации, практикумы</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ФУТЕР -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Открытый кампус</h4>
+                    <p>РГПУ им. А. И. Герцена<br>наб. реки Мойки, 48<br>Санкт-Петербург</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <a href="about.html">О кампусе</a>
+                    <a href="events.html">События</a>
+                    <a href="spaces.html">Пространства</a>
+                    <a href="news.html">Новости</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Документы</h4>
+                    <a href="#">Правила посещения</a>
+                    <a href="partners.html">Партнерам</a>
+                    <a href="#">Спикерам</a>
+                    <a href="#">Политика</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Социальные сети</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="VK">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 4L19 20C18.9 20.6 18.3 21 17.7 20.9C16.8 20.8 13 19 11 17C9 15 7 11 7 10C7 9.5 7.2 9 7.7 8.8L12 9L16 5C16.7 4.3 17.7 4.2 18.4 4.8L22 4Z"/>
+                                <path d="M13 13L9 17M15 9L11 13"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Telegram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <rect x="2" y="6" width="20" height="12" rx="2"/>
+                                <path d="M10 10L15 12L10 14V10Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p style="margin-top: 1.5rem;">Подпишитесь на новости</p>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2026 Открытый кампус РГПУ им. А. И. Герцена
+            </div>
+        </div>
+    </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО РЕГИСТРАЦИИ (для демо) -->
+    <div class="modal-overlay" id="registrationModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <h3 id="modalEventTitle">Регистрация на событие</h3>
+            <form class="modal-form" id="registrationForm" onsubmit="submitRegistration(event)">
+                <div class="form-group">
+                    <input type="text" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Телефон (необязательно)">
+                </div>
+                <button type="submit" class="modal-submit">Записаться</button>
+                <div class="success-message" id="successMessage">
+                    ✓ Вы зарегистрированы! Подтверждение отправлено на email.
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
